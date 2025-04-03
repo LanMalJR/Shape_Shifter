@@ -17,6 +17,7 @@ public class RoadSpawner : MonoBehaviour
         {
             // Reposition the initial planes along the X-axis
             roadPrefab[i].transform.position = new Vector3(i * roadLength, 0, 0); // Position planes along X-axis
+
         }
     }
 
@@ -39,7 +40,7 @@ public class RoadSpawner : MonoBehaviour
         GameObject selectedRoad = roadPrefab[Random.Range(0, roadPrefab.Length)];
 
         // Instantiate the selected road prefab at the next spawn position
-        Instantiate(selectedRoad, new Vector3(0, 0, nextSpawnX), Quaternion.identity);
+        Instantiate(selectedRoad, new Vector3(nextSpawnX, 0, 0), Quaternion.identity);
 
         // Update the spawn position for the next road
         nextSpawnX += roadLength;
