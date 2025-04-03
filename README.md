@@ -3,5 +3,5 @@
 * The game is built using `Unity` and `C#`
 
 ### Controls
-* `spacebar` - shape shift
+* `Spacebar` - shape shift
 * `Arrow keys (<right and left>)` - to move
